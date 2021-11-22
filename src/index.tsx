@@ -1,12 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import Main from './components/Main/Main';
 import reportWebVitals from './reportWebVitals';
+import { Provider } from 'inversify-react';
+import { container } from './config/ioc/inversify.config';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Provider container={container}>
+      <Main></Main>
+    </Provider>
   </React.StrictMode>,
   document.getElementById('root')
 );

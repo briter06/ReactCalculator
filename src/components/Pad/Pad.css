@@ -1,0 +1,31 @@
+.pad_container{
+    padding: 15px;
+    flex: 3;
+}
+
+.pad{
+    text-align: center;
+    background-color: transparent;
+    height: 100%;
+}
+
+.pad div{
+    margin: 0 !important;
+}
+
+.pad_button{
+    text-align: center;
+    height: 60px;
+    line-height: 60px;
+    justify-content: center;
+    background-color: transparent;
+}
+
+.pad_button{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.pad_button.pointer{
+    cursor: pointer;
+}
